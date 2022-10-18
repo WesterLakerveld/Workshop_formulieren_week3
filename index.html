@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 formulier</title>
+    <link rel="stylesheet" href="assets/css/style.css/">
+</head>
+<body>
+    <div id="container">
+        <form action="doelbestand.php" method="get">
+Voornnaam:<input type="text" name="vnaam" placeholder="Voornaam"/><br>
+Achternaam:<input type="text" name="anaam" placeholder="Achternaam"/><br>
+Geboortedatum:<input type="date" name="datum"/>
+            <input type="daytime-local">    
+            <input type="time"/>
+            <input type="week"/>
+            <input type="month"/>
+
+            <input id="country" type="text" name="country" size="40" list="countries" />
+            <datalist id="countries">
+            <option value="Australia">
+            <option value="Canada">
+            <option value="US">
+            <option value="France">
+            <option value="Germany">
+             </datalist> 
+
+
+             <input type="number" />       
+             <input type="number" min="5" max="100" step="5" value="10" /> <br>
+
+             <input id="email" type="e-mail" name="e-mail" required >
+
+             <input type="file" name="file" id="file">
+
+             <input type="color">
+
+             <input type="range" min="1" max="10">
+
+
+            <input type="submit" /> 
+            </form>
+    </div>
+    
+</body>
+</html>
